@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
@@ -11,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -54,8 +57,7 @@
 
         <h1 class="intro-title">
 
-          Hey, I'm Roque — <br>
-          Frontend Developer
+           <span id="typing-text"></span><span class="typing-cursor">|</span>
 
         </h1>
 
@@ -78,7 +80,7 @@
 
           <a href="#">GitHub</a>
 
-          <a href="#">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/rodrigo-roque-206b001b8/">LinkedIn</a>
 
         </div>
 
@@ -90,82 +92,69 @@
       ====================== -->
 
       <nav class="side-links">
+        <div class="project-preview" aria-hidden="true">
+          <div class="project-preview__image"></div>
+        </div>
 
-        <a class="project-link" href="#">
+        <a class="project-link" href="#shopify" data-preview="shopify">
 
           <span class="project-title">
-
             Shopify Theme Dev
-
           </span>
 
           <span class="project-meta">
-
             Custom Liquid / CSS / JS
-
           </span>
 
         </a>
 
 
-        <a class="project-link" href="#">
+        <a class="project-link" href="#landing" data-preview="landing">
 
           <span class="project-title">
-
             Frontend Landing
-
           </span>
 
           <span class="project-meta">
-
             HTML / CSS / JS
-
           </span>
 
         </a>
 
 
-        <a class="project-link" href="#">
+        <a class="project-link" href="#ui" data-preview="ui">
 
           <span class="project-title">
-
             UI Experiments
-
           </span>
 
           <span class="project-meta">
-
             Micro interactions
-
           </span>
 
         </a>
 
 
-        <a class="project-link" href="#">
+        <a class="project-link" href="#qa" data-preview="qa">
 
           <span class="project-title">
-
             QA Dashboard
-
           </span>
 
           <span class="project-meta">
-
             Testing analytics
-
           </span>
 
         </a>
 
 
         <div class="scroll-hint">
-
           ↓ Scroll
-
         </div>
 
       </nav>
+
+
 
 
       <!-- ======================
@@ -189,9 +178,110 @@
       </footer>
 
     </main>
+          <section id="shopify" class="project-section">
+
+<div class="project-container">
+
+<header class="project-header">
+
+<h2>Shopify Theme Development</h2>
+
+<p>
+Custom themes built with Liquid, CSS and JavaScript
+</p>
+
+</header>
+
+
+<div class="project-hero">
+
+<img src="assets/shopify-mockup.png" alt="Shopify theme preview">
+
+</div>
+
+
+<div class="project-about">
+
+<h3>About this work</h3>
+
+<p>
+I develop custom Shopify themes focused on performance,
+clean UI and flexible sections for store owners.
+</p>
+
+<ul>
+<li>Custom Liquid templates</li>
+<li>Section based architecture</li>
+<li>Responsive UI</li>
+<li>Performance optimization</li>
+</ul>
+
+</div>
+
+
+<div class="project-stack">
+
+<h3>Tech Stack</h3>
+
+<div class="stack-tags">
+
+<span>Shopify Liquid</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Shopify CLI</span>
+<span>Git</span>
+
+</div>
+
+</div>
+
+
+<div class="project-gallery">
+
+<h3>Project Highlights</h3>
+
+<div class="gallery-grid">
+
+<img src="assets/shopify-1.png">
+<img src="assets/shopify-2.png">
+<img src="assets/shopify-3.png">
+<img src="assets/shopify-4.png">
+
+</div>
+
+</div>
+
+
+<div class="project-links">
+
+<a href="#">View Project</a>
+<a href="#">GitHub</a>
+<a href="#">Live Store</a>
+
+</div>
+
+</div>
+
+</section>
+
+      <section id="landing" class="project-section">
+        <h2>Frontend Landing Pages</h2>
+        <p>Modern responsive pages using HTML, CSS and JS.</p>
+      </section>
+
+      <section id="ui" class="project-section">
+        <h2>UI Experiments</h2>
+        <p>Micro interactions and UI explorations.</p>
+      </section>
+
+      <section id="qa" class="project-section">
+        <h2>QA Dashboard</h2>
+        <p>Testing analytics dashboards and automation tools.</p>
+      </section>
 
   </div>
-
+  <script src="js/script.js"></script>
 </body>
 
 </html>
