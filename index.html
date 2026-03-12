@@ -21,266 +21,178 @@
 
 </head>
 
-<body>
-
-  <div class="page">
+<body >
+  <div class="page" id="top">
 
     <main class="app-shell">
-
-      <!-- ======================
-      TOP BAR
-      ====================== -->
-
       <header class="topbar">
-
         <a href="#" class="brand">
-
           <span class="brand-mark">
             <span></span>
             <span></span>
           </span>
-
           Roque.dev
-
         </a>
 
-        <button class="theme-toggle"></button>
-
+        <button class="theme-toggle" aria-label="Cambiar tema"></button>
       </header>
 
-
-      <!-- ======================
-      INTRO / HERO
-      ====================== -->
-
       <section class="intro">
-
         <h1 class="intro-title">
-
-           <span id="typing-text"></span><span class="typing-cursor">|</span>
-
+          <span id="typing-text"></span><span class="typing-cursor">|</span>
         </h1>
 
         <p class="intro-text">
-
           I build modern web interfaces using JavaScript, CSS and clean UI systems.
-
         </p>
 
         <p class="intro-text">
-
           Currently building web interfaces, UI systems and experimenting with frontend technologies.
-
         </p>
-
-
-        <!-- Social links -->
 
         <div class="socials">
-
           <a href="#">GitHub</a>
-
-          <a href="https://www.linkedin.com/in/rodrigo-roque-206b001b8/">LinkedIn</a>
-
+          <a href="#">LinkedIn</a>
         </div>
-
       </section>
 
-
-      <!-- ======================
-      PROJECT NAVIGATION
-      ====================== -->
-
-      <nav class="side-links">
-        <div class="project-preview" aria-hidden="true">
-          <div class="project-preview__image"></div>
-        </div>
-
-        <a class="project-link" href="#shopify" data-preview="shopify">
-
-          <span class="project-title">
-            Shopify Theme Dev
-          </span>
-
-          <span class="project-meta">
-            Custom Liquid / CSS / JS
-          </span>
-
-        </a>
-
-
-        <a class="project-link" href="#landing" data-preview="landing">
-
-          <span class="project-title">
-            Frontend Landing
-          </span>
-
-          <span class="project-meta">
-            HTML / CSS / JS
-          </span>
-
-        </a>
-
-
-        <a class="project-link" href="#ui" data-preview="ui">
-
-          <span class="project-title">
-            UI Experiments
-          </span>
-
-          <span class="project-meta">
-            Micro interactions
-          </span>
-
-        </a>
-
-
-        <a class="project-link" href="#qa" data-preview="qa">
-
-          <span class="project-title">
-            QA Dashboard
-          </span>
-
-          <span class="project-meta">
-            Testing analytics
-          </span>
-
-        </a>
-
-
-        <div class="scroll-hint">
-          ↓ Scroll
-        </div>
-
-      </nav>
-
-
-
-
-      <!-- ======================
-      FOOTER
-      ====================== -->
+      <div class="project-preview" aria-hidden="true">
+        <div class="project-preview__image"></div>
+      </div>
 
       <footer class="footer">
-
-        <p>
-
-          Designed with intention.
-
-        </p>
-
-        <span>
-
-          © Roque.dev 2026
-
-        </span>
-
+        <p>Designed with intention.</p>
+        <span>© Roque.dev 2026</span>
       </footer>
-
     </main>
-          <section id="shopify" class="project-section">
 
-<div class="project-container">
+    <section class="projects-layout">
+      <aside class="projects-sidebar">
+        <nav class="side-links">
+          <a class="project-link" href="#shopify" data-preview="shopify" data-section="shopify">
+            <span class="project-title">Shopify Theme Dev</span>
+            <span class="project-meta">Custom Liquid / CSS / JS</span>
+          </a>
 
-<header class="project-header">
+          <a class="project-link" href="#landing" data-preview="landing" data-section="landing">
+            <span class="project-title">Frontend Landing</span>
+            <span class="project-meta">HTML / CSS / JS</span>
+          </a>
 
-<h2>Shopify Theme Development</h2>
+          <a class="project-link" href="#ui" data-preview="ui" data-section="ui">
+            <span class="project-title">UI Experiments</span>
+            <span class="project-meta">Micro interactions</span>
+          </a>
 
-<p>
-Custom themes built with Liquid, CSS and JavaScript
-</p>
+          <a class="project-link" href="#qa" data-preview="qa" data-section="qa">
+            <span class="project-title">QA Dashboard</span>
+            <span class="project-meta">Testing analytics</span>
+          </a>
 
-</header>
+          <a class="back-to-top" href="#top">↑ Back to top</a>
+        </nav>
+      </aside>
 
+      <div class="projects-content">
+        <section id="shopify" class="case-study reveal">
+          <div class="case-study__header">
+            <p class="case-study__eyebrow">PROJECT</p>
+            <h2>Shopify Theme Development</h2>
+            <p class="case-study__subtitle">
+              Custom themes built with Liquid, CSS and JavaScript.
+            </p>
+          </div>
 
-<div class="project-hero">
+          <div class="case-study__hero"></div>
 
-<img src="assets/shopify-mockup.png" alt="Shopify theme preview">
+          <div class="case-study__split">
+            <div class="case-study__image"></div>
 
-</div>
+            <div class="case-study__about">
+              <h3>About this work</h3>
+              <p>
+                I develop custom Shopify themes focused on performance, clean UI
+                and flexible sections for store owners.
+              </p>
 
+              <ul class="case-study__list">
+                <li>Custom Liquid templates</li>
+                <li>Section based architecture</li>
+                <li>Responsive UI</li>
+                <li>Performance optimization</li>
+              </ul>
+            </div>
+          </div>
 
-<div class="project-about">
+          <div class="case-study__stack">
+            <h3>Tech Stack</h3>
+            <div class="stack-tags">
+              <span>Shopify Liquid</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Shopify CLI</span>
+              <span>Git</span>
+            </div>
+          </div>
 
-<h3>About this work</h3>
+          <div class="case-study__highlights">
+            <h3>Project Highlights</h3>
+            <div class="highlights-grid">
+              <div class="highlight-card">Homepage layout</div>
+              <div class="highlight-card">Product page</div>
+              <div class="highlight-card">Mobile responsive</div>
+              <div class="highlight-card">Custom sections</div>
+            </div>
+          </div>
 
-<p>
-I develop custom Shopify themes focused on performance,
-clean UI and flexible sections for store owners.
-</p>
+          <div class="case-study__actions">
+            <a href="#">View Project</a>
+            <a href="#">GitHub</a>
+            <a href="#">Live Store</a>
+          </div>
+        </section>
 
-<ul>
-<li>Custom Liquid templates</li>
-<li>Section based architecture</li>
-<li>Responsive UI</li>
-<li>Performance optimization</li>
-</ul>
+        <section id="landing" class="case-study reveal">
+          <div class="case-study__header">
+            <p class="case-study__eyebrow">PROJECT</p>
+            <h2>Frontend Landing Pages</h2>
+            <p class="case-study__subtitle">
+              Modern responsive pages using HTML, CSS and JS.
+            </p>
+          </div>
 
-</div>
+          <div class="case-study__hero"></div>
+        </section>
 
+        <section id="ui" class="case-study reveal">
+          <div class="case-study__header">
+            <p class="case-study__eyebrow">PROJECT</p>
+            <h2>UI Experiments</h2>
+            <p class="case-study__subtitle">
+              Micro interactions and interface explorations.
+            </p>
+          </div>
 
-<div class="project-stack">
+          <div class="case-study__hero"></div>
+        </section>
 
-<h3>Tech Stack</h3>
+        <section id="qa" class="case-study reveal">
+          <div class="case-study__header">
+            <p class="case-study__eyebrow">PROJECT</p>
+            <h2>QA Dashboard</h2>
+            <p class="case-study__subtitle">
+              Testing analytics dashboards and QA workflows.
+            </p>
+          </div>
 
-<div class="stack-tags">
-
-<span>Shopify Liquid</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>Shopify CLI</span>
-<span>Git</span>
-
-</div>
-
-</div>
-
-
-<div class="project-gallery">
-
-<h3>Project Highlights</h3>
-
-<div class="gallery-grid">
-
-<img src="assets/shopify-1.png">
-<img src="assets/shopify-2.png">
-<img src="assets/shopify-3.png">
-<img src="assets/shopify-4.png">
-
-</div>
-
-</div>
-
-
-<div class="project-links">
-
-<a href="#">View Project</a>
-<a href="#">GitHub</a>
-<a href="#">Live Store</a>
-
-</div>
-
-</div>
-
-</section>
-
-      <section id="landing" class="project-section">
-        <h2>Frontend Landing Pages</h2>
-        <p>Modern responsive pages using HTML, CSS and JS.</p>
-      </section>
-
-      <section id="ui" class="project-section">
-        <h2>UI Experiments</h2>
-        <p>Micro interactions and UI explorations.</p>
-      </section>
-
-      <section id="qa" class="project-section">
-        <h2>QA Dashboard</h2>
-        <p>Testing analytics dashboards and automation tools.</p>
-      </section>
+          <div class="case-study__hero"></div>
+        </section>
+      </div>
+    </section>
 
   </div>
+
   <script src="js/script.js"></script>
 </body>
 

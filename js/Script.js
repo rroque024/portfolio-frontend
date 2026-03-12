@@ -87,3 +87,31 @@ window.addEventListener("load", () => {
     typeTitle();
   }
 });
+
+/* =========================
+   ACTIVE SECTION IN SIDEBAR
+========================= */
+const caseStudies = document.querySelectorAll(".case-study");
+const navLinks = document.querySelectorAll(".project-link[data-section]");
+
+if (caseStudies.length && navLinks.length) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const activeId = entry.target.getAttribute("id");
+
+          navLinks.forEach((link) => {
+            const linkId = link.dataset.section;
+            link.classList.toggle("is-active", linkId === activeId);
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.45,
+    }
+  );
+
+  caseStudies.forEach((section) => sectionObserver.observe(section));
+}
