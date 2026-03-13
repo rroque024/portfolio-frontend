@@ -115,3 +115,26 @@ if (caseStudies.length && navLinks.length) {
 
   caseStudies.forEach((section) => sectionObserver.observe(section));
 }
+
+const revealElements = document.querySelectorAll(".reveal");
+
+if (revealElements.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+      rootMargin: "0px 0px -10% 0px",
+    }
+  );
+
+  revealElements.forEach((element) => {
+    revealObserver.observe(element);
+  });
+}
