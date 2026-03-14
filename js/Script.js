@@ -109,7 +109,7 @@ if (caseStudies.length && navLinks.length) {
       });
     },
     {
-      threshold: 0.45,
+      threshold: 0.45,  
     }
   );
 
